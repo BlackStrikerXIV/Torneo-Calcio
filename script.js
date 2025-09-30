@@ -8,7 +8,7 @@ const giornate = [
         squadra1: "PSG1", gol1: "1", 
         squadra2: "Martiri", gol2: "5",        
         marcatori1: ["(1) Lorenzo Brito"],
-        marcatori2: ["(1) Kevin Tirilló", "(2) Daniele Croce", "(1) Massimo Boccanera", "(1) Daniel Maryl"]
+        marcatori2: ["(1) Kevin Tirilló", "(2) Daniele Croce", "(1) Massimo Boccanera", "(1) Daniel Rosati"]
       },
       { 
         data: "Mercoledì 1/10  Ore 20.30", 
@@ -185,7 +185,7 @@ const marcatori = [
   { nome: "Lorenzo Brito", squadra: "PSG1", gol: 1},
   { nome: "Kevin Tirilló", squadra: "Martiri", gol: 1},
   { nome: "Massimo Boccanera", squadra: "Martiri", gol: 1},
-  { nome: "Daniel Maryl", squadra: "Martiri", gol: 1},
+  { nome: "Daniel Rosati", squadra: "Martiri", gol: 1},
 ];
 
 const marcatoriBody = document.querySelector("#tabella-marcatori tbody");
