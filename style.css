@@ -1,0 +1,33 @@
+/* Corpo pagina */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar personalizzata */
+.custom-navbar {
+  background-color: #003366; /* blu scuro */
+}
+
+/* Link e brand della navbar */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: white !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover rosso sui link */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+  color: red !important;
+}
+
+/* Link attivo giallo */
+.custom-navbar .nav-link.active {
+  color: red !important;
+  font-weight: bold;
+}
+
+/* Tabelle */
+table {
+  background-color: white;
+}

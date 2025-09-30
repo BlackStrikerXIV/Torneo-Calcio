@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Torneo di Calcio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-light text-dark">
+
+  <!-- Navbar con tab -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Torneo di Calcio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTabs" aria-controls="navbarTabs" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTabs">
+        <ul class="navbar-nav ms-auto nav nav-tabs" id="torneoTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="calendario-tab" data-bs-toggle="tab" data-bs-target="#calendario" type="button" role="tab" aria-controls="calendario" aria-selected="false">
+              <i class="bi bi-calendar-event-fill me-1"></i> Calendario
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="classifica-tab" data-bs-toggle="tab" data-bs-target="#classifica" type="button" role="tab" aria-controls="classifica" aria-selected="false">
+              <i class="bi bi-trophy-fill me-1"></i> Classifica
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="marcatori-tab" data-bs-toggle="tab" data-bs-target="#marcatori" type="button" role="tab" aria-controls="marcatori" aria-selected="false">
+              <i class="bi bi-people-fill me-1"></i> Marcatori
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenuto tab -->
+  <div class="container py-4">
+    <div class="tab-content" id="torneoTabsContent">
+
+      <!-- HOME -->
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <h2 class="text-center mb-4">Benvenuto al Torneo di Calcio</h2>
+        <div class="text-center">
+          <img src="img/torneo.jpg" alt="Torneo di Calcio" class="img-fluid rounded shadow" style="max-height: 400px;" />
+          <!-- Usa un'immagine tua in img/torneo.jpg -->
+        </div>
+        <p class="text-center mt-4">Scegli una sezione dal menu in alto per iniziare!</p>
+      </div>
+
+      <!-- CALENDARIO -->
+      <div class="tab-pane fade" id="calendario" role="tabpanel" aria-labelledby="calendario-tab">
+        <h2 class="text-center mb-4">Calendario Partite</h2>
+        <table class="table table-bordered table-striped" id="tabella-calendario">
+          <thead class="table-light">
+            <tr>
+
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+		
+<!-- Tabellone Semifinali e Finale -->
+<div class="mt-5 p-4 bg-white rounded shadow-sm border">
+  <h3 class="text-center mb-4 fw-bold text-primary">Tabellone Playoff</h3>
+
+  <!-- Semifinali -->
+  <div class="mb-5">
+    <h4 class="mb-4 fw-semibold text-secondary text-center">SEMIFINALI</h4>
+    
+    <div class="d-flex justify-content-center gap-4 flex-wrap flex-md-nowrap">
+
+      <!-- Semifinale 1 -->
+      <div class="text-center flex-fill" style="min-width: 180px;">
+        <div class="fst-italic text-muted mb-2">Venerdì 10 ore 19:00</div>
+        <div class="border border-primary rounded-3 py-3 px-4 fw-bold bg-light shadow-sm">
+          Seconda<br>vs<br>Terza
+        </div>
+      </div>
+
+      <!-- Semifinale 2 -->
+      <div class="text-center flex-fill" style="min-width: 180px;">
+        <div class="fst-italic text-muted mb-2">Venerdì 10 ore 20:30</div>
+        <div class="border border-primary rounded-3 py-3 px-4 fw-bold bg-light shadow-sm">
+          Prima<br>vs<br>Quarta
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Finale -->
+  <div>
+    <h4 class="mb-3 fw-semibold text-secondary text-center">FINALE</h4>
+    <div class="d-flex justify-content-center">
+      <div class="text-center flex-fill" style="min-width: 200px; max-width: 280px;">
+        <div class="fst-italic text-muted mb-2">Domenica 12 ore 18:30</div>
+        <div class="border border-success rounded-3 py-3 px-4 fw-bold bg-light shadow-sm text-success">
+          Vincente Sem 1<br>vs<br>Vincente Sem 2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <!-- CLASSIFICA -->
+      <div class="tab-pane fade" id="classifica" role="tabpanel" aria-labelledby="classifica-tab">
+        <h2 class="text-center mb-4">Classifica</h2>
+        <table class="table table-bordered table-striped" id="tabella-classifica">
+          <thead class="table-light">
+            <tr>
+              <th>Squadra</th>
+              <th>Punti</th>
+              <th>G</th>
+              <th>V</th>
+              <th>N</th>
+              <th>P</th>
+              <th>GF</th>
+              <th>GS</th>
+              <th>DR</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- MARCATORI -->
+      <div class="tab-pane fade" id="marcatori" role="tabpanel" aria-labelledby="marcatori-tab">
+        <h2 class="text-center mb-4">Classifica Marcatori</h2>
+        <table class="table table-bordered table-striped" id="tabella-marcatori">
+          <thead class="table-light">
+            <tr>
+              <th>Giocatore</th>
+              <th>Squadra</th>
+              <th>Gol</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
