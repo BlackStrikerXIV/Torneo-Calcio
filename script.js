@@ -5,10 +5,10 @@ const giornate = [
     partite: [
       { 
         data: "Martedì 30/09  Ore 20.30", 
-        squadra1: "PSG1", gol1: "", 
-        squadra2: "Martiri", gol2: "",        
-        marcatori1: [],
-        marcatori2: []
+        squadra1: "PSG1", gol1: "1", 
+        squadra2: "Martiri", gol2: "5",        
+        marcatori1: ["(1) Lorenzo Brito"],
+        marcatori2: ["(1) Kevin Tirilló", "(2) Daniele Croce", "(1) Massimo Bocca", "(1) Daniel Maryl"]
       },
       { 
         data: "Mercoledì 1/10  Ore 20.30", 
@@ -154,10 +154,10 @@ giornate.forEach(giornata => {
 
 // --- CLASSIFICA ---
 const classifica = [
-  { squadra: "PSG1", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
+  { squadra: "Martiri", punti: 3, g: 1, v: 1, n: 0, p: 0, gf: 5, gs: 1, dr: 4 },
+  { squadra: "PSG1", punti: 0, g: 1, v: 0, n: 0, p: 1, gf: 1, gs: 5, dr: -4 },
   { squadra: "PSG2", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
   { squadra: "Natività", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
-  { squadra: "Martiri", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
   { squadra: "SGM", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 }
 ];
 
@@ -181,8 +181,11 @@ classifica.forEach(c => {
 
 // --- MARCATORI ---
 const marcatori = [
-  { nome: "N/A", squadra: "N/A", gol: 0 },
-  { nome: "N/A", squadra: "N/A", gol: 0 },
+  { nome: "Daniele Croce", squadra: "Martiri", gol: 2 },
+  { nome: "Lorenzo Brito", squadra: "PSG1", gol: 1},
+  { nome: "Kevin Tirilló", squadra: "Martiri", gol: 1},
+  { nome: "Massimo Bocca", squadra: "Martiri", gol: 1},
+  { nome: "Daniel Maryl", squadra: "Martiri", gol: 1},
 ];
 
 const marcatoriBody = document.querySelector("#tabella-marcatori tbody");
@@ -196,3 +199,4 @@ marcatori.forEach(m => {
   `;
   marcatoriBody.appendChild(tr);
 });
+
