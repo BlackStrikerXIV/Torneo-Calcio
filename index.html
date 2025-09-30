@@ -16,35 +16,35 @@
 <body class="bg-light text-dark">
 
   <!-- Navbar con tab sempre visibili -->
-<nav class="custom-navbar shadow-sm sticky-top border-bottom">
-  <div class="container-fluid px-0">
-    <div class="text-center py-2 fw-bold fs-5" style="color: white;">Torneo parrocchia San Girolamo</div>
+  <nav class="custom-navbar shadow-sm sticky-top border-bottom">
+    <div class="container-fluid px-0">
+      <div class="text-center py-2 fw-bold fs-5" style="color: white;">Torneo parrocchia San Girolamo</div>
 
-    <!-- Tabs sempre visibili, scrollabili su mobile -->
-    <ul class="nav nav-tabs justify-content-around flex-nowrap overflow-auto px-2" id="torneoTabs" role="tablist" style="white-space: nowrap;">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-          <i class="bi bi-house-door-fill me-1"></i>
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="calendario-tab" data-bs-toggle="tab" data-bs-target="#calendario" type="button" role="tab" aria-controls="calendario" aria-selected="false">
-          <i class="bi bi-calendar-event-fill me-1"></i> Calendario
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="classifica-tab" data-bs-toggle="tab" data-bs-target="#classifica" type="button" role="tab" aria-controls="classifica" aria-selected="false">
-          <i class="bi bi-trophy-fill me-1"></i> Classifica
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="marcatori-tab" data-bs-toggle="tab" data-bs-target="#marcatori" type="button" role="tab" aria-controls="marcatori" aria-selected="false">
-          <i class="bi bi-people-fill me-1"></i> Marcatori
-        </button>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <!-- Tabs sempre visibili, scrollabili su mobile -->
+      <ul class="nav nav-tabs justify-content-around flex-nowrap overflow-auto px-2" id="torneoTabs" role="tablist" style="white-space: nowrap;">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+            <i class="bi bi-house-door-fill me-1"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="calendario-tab" data-bs-toggle="tab" data-bs-target="#calendario" type="button" role="tab" aria-controls="calendario" aria-selected="false">
+            <i class="bi bi-calendar-event-fill me-1"></i> Calendario
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="classifica-tab" data-bs-toggle="tab" data-bs-target="#classifica" type="button" role="tab" aria-controls="classifica" aria-selected="false">
+            <i class="bi bi-trophy-fill me-1"></i> Classifica
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="marcatori-tab" data-bs-toggle="tab" data-bs-target="#marcatori" type="button" role="tab" aria-controls="marcatori" aria-selected="false">
+            <i class="bi bi-people-fill me-1"></i> Marcatori
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Contenuto tab -->
   <div class="container py-4">
@@ -55,7 +55,6 @@
         <h2 class="text-center mb-4">Benvenuto al Torneo di Calcio</h2>
         <div class="text-center">
           <img src="img/torneo.jpg" alt="Torneo di Calcio" class="img-fluid rounded shadow" style="max-height: 400px;" />
-          <!-- Usa un'immagine tua in img/torneo.jpg -->
         </div>
         <p class="text-center mt-4">Scegli una sezione dal menu in alto per iniziare!</p>
       </div>
@@ -66,54 +65,57 @@
         <table class="table table-bordered table-striped" id="tabella-calendario">
           <thead class="table-light">
             <tr>
-
+              <th>Data</th>
+              <th></th>
+              <th>Risultato</th>
+              <th></th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
-		
-<!-- Tabellone Semifinali e Finale -->
-<div class="mt-5 p-4 bg-white rounded shadow-sm border">
-  <h3 class="text-center mb-4 fw-bold text-primary">Tabellone Playoff</h3>
+        
+        <!-- Tabellone Semifinali e Finale -->
+        <div class="mt-5 p-4 bg-white rounded shadow-sm border">
+          <h3 class="text-center mb-4 fw-bold text-primary">Tabellone Playoff</h3>
 
-  <!-- Semifinali -->
-  <div class="mb-5">
-    <h4 class="mb-4 fw-semibold text-secondary text-center">SEMIFINALI</h4>
-    
-    <div class="d-flex justify-content-center gap-4 flex-wrap flex-md-nowrap">
+          <!-- Semifinali -->
+          <div class="mb-5">
+            <h4 class="mb-4 fw-semibold text-secondary text-center">SEMIFINALI</h4>
+            
+            <div class="d-flex justify-content-center gap-4 flex-wrap flex-md-nowrap">
 
-      <!-- Semifinale 1 -->
-      <div class="text-center flex-fill" style="min-width: 180px;">
-        <div class="fst-italic text-muted mb-2">Venerdì 10 ore 19:00</div>
-        <div class="border border-primary rounded-3 py-3 px-4 fw-bold bg-light shadow-sm">
-          Seconda<br>vs<br>Terza
+              <!-- Semifinale 1 -->
+              <div class="text-center flex-fill" style="min-width: 180px;">
+                <div class="fst-italic text-muted mb-2">Venerdì 10 ore 19:00</div>
+                <div class="border border-primary rounded-3 py-3 px-4 fw-bold bg-light shadow-sm">
+                  Seconda<br>vs<br>Terza
+                </div>
+              </div>
+
+              <!-- Semifinale 2 -->
+              <div class="text-center flex-fill" style="min-width: 180px;">
+                <div class="fst-italic text-muted mb-2">Venerdì 10 ore 20:30</div>
+                <div class="border border-primary rounded-3 py-3 px-4 fw-bold bg-light shadow-sm">
+                  Prima<br>vs<br>Quarta
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Finale -->
+          <div>
+            <h4 class="mb-3 fw-semibold text-secondary text-center">FINALE</h4>
+            <div class="d-flex justify-content-center">
+              <div class="text-center flex-fill" style="min-width: 200px; max-width: 280px;">
+                <div class="fst-italic text-muted mb-2">Domenica 12 ore 18:30</div>
+                <div class="border border-success rounded-3 py-3 px-4 fw-bold bg-light shadow-sm text-success">
+                  Vincente Sem 1<br>vs<br>Vincente Sem 2
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <!-- Semifinale 2 -->
-      <div class="text-center flex-fill" style="min-width: 180px;">
-        <div class="fst-italic text-muted mb-2">Venerdì 10 ore 20:30</div>
-        <div class="border border-primary rounded-3 py-3 px-4 fw-bold bg-light shadow-sm">
-          Prima<br>vs<br>Quarta
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Finale -->
-  <div>
-    <h4 class="mb-3 fw-semibold text-secondary text-center">FINALE</h4>
-    <div class="d-flex justify-content-center">
-      <div class="text-center flex-fill" style="min-width: 200px; max-width: 280px;">
-        <div class="fst-italic text-muted mb-2">Domenica 12 ore 18:30</div>
-        <div class="border border-success rounded-3 py-3 px-4 fw-bold bg-light shadow-sm text-success">
-          Vincente Sem 1<br>vs<br>Vincente Sem 2
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
       </div>
 
@@ -153,6 +155,31 @@
         </table>
       </div>
 
+    </div>
+  </div>
+
+  <!-- Modal Marcatori -->
+  <div class="modal fade" id="modalMarcatori" tabindex="-1" aria-labelledby="modalMarcatoriLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMarcatoriLabel">Marcatori partita</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <h6 id="squadra1-titolo"></h6>
+            <ul id="marcatori-squadra1" class="list-group mb-3"></ul>
+          </div>
+          <div>
+            <h6 id="squadra2-titolo"></h6>
+            <ul id="marcatori-squadra2" class="list-group"></ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
     </div>
   </div>
 

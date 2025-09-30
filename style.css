@@ -31,3 +31,25 @@ body {
 table {
   background-color: white;
 }
+
+/* Stile per la riga dei marcatori */
+.riga-marcatori td {
+  background-color: white;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+#tabella-calendario tr:not(.table-primary) td {
+  border-bottom: none;
+}
+
+#tabella-calendario td {
+  vertical-align: middle;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
