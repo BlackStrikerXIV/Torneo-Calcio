@@ -15,40 +15,36 @@
 </head>
 <body class="bg-light text-dark">
 
-  <!-- Navbar con tab -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Torneo di Calcio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTabs" aria-controls="navbarTabs" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Navbar con tab sempre visibili -->
+<nav class="custom-navbar shadow-sm sticky-top border-bottom">
+  <div class="container-fluid px-0">
+    <div class="text-center py-2 fw-bold fs-5" style="color: white;">Torneo parrocchia San Girolamo</div>
 
-      <div class="collapse navbar-collapse" id="navbarTabs">
-        <ul class="navbar-nav ms-auto nav nav-tabs" id="torneoTabs" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-              <i class="bi bi-house-door-fill me-1"></i> Home
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="calendario-tab" data-bs-toggle="tab" data-bs-target="#calendario" type="button" role="tab" aria-controls="calendario" aria-selected="false">
-              <i class="bi bi-calendar-event-fill me-1"></i> Calendario
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="classifica-tab" data-bs-toggle="tab" data-bs-target="#classifica" type="button" role="tab" aria-controls="classifica" aria-selected="false">
-              <i class="bi bi-trophy-fill me-1"></i> Classifica
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="marcatori-tab" data-bs-toggle="tab" data-bs-target="#marcatori" type="button" role="tab" aria-controls="marcatori" aria-selected="false">
-              <i class="bi bi-people-fill me-1"></i> Marcatori
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Tabs sempre visibili, scrollabili su mobile -->
+    <ul class="nav nav-tabs justify-content-around flex-nowrap overflow-auto px-2" id="torneoTabs" role="tablist" style="white-space: nowrap;">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+          <i class="bi bi-house-door-fill me-1"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="calendario-tab" data-bs-toggle="tab" data-bs-target="#calendario" type="button" role="tab" aria-controls="calendario" aria-selected="false">
+          <i class="bi bi-calendar-event-fill me-1"></i> Calendario
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="classifica-tab" data-bs-toggle="tab" data-bs-target="#classifica" type="button" role="tab" aria-controls="classifica" aria-selected="false">
+          <i class="bi bi-trophy-fill me-1"></i> Classifica
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="marcatori-tab" data-bs-toggle="tab" data-bs-target="#marcatori" type="button" role="tab" aria-controls="marcatori" aria-selected="false">
+          <i class="bi bi-people-fill me-1"></i> Marcatori
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Contenuto tab -->
   <div class="container py-4">
