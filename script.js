@@ -13,7 +13,7 @@ const giornate = [
       },
       { 
         data: "Mercoledì 1/10  Ore 20.30", 
-        squadra1: "Natività", gol1: "", 
+        squadra1: "Natività🔘", gol1: "", 
         squadra2: "SGM⚫", gol2: "",
         marcatori1: [],
         marcatori2: [],
@@ -28,7 +28,7 @@ const giornate = [
       { 
         data: "Giovedì 2/10  Ore 20.30", 
         squadra1: "PSG1🔴", gol1: "", 
-        squadra2: "Natività", gol2: "",
+        squadra2: "Natività🔘", gol2: "",
         marcatori1: [],
         marcatori2: [],
 		ammoniti: []
@@ -64,7 +64,7 @@ const giornate = [
 		ammoniti: []
       }
     ],
-    riposo: ["PSG1", "Natività"]
+    riposo: ["PSG1", "Natività🔘"]
   },
   {
     giornata: 4,
@@ -72,7 +72,7 @@ const giornate = [
       { 
         data: "Lunedì 6/10  Ore 18.30", 
         squadra1: "PSG2🔵", gol1: "", 
-        squadra2: "Natività", gol2: "",
+        squadra2: "Natività🔘", gol2: "",
         marcatori1: [],
         marcatori2: [],
 		ammoniti: []
@@ -102,7 +102,7 @@ const giornate = [
       { 
         data: "Giovedì 9/10  Ore 20.30", 
         squadra1: "Martiri⚪", gol1: "", 
-        squadra2: "Natività", gol2: "",
+        squadra2: "Natività🔘", gol2: "",
         marcatori1: [],
         marcatori2: [],
 		ammoniti: []
@@ -167,7 +167,7 @@ const classifica = [
   { squadra: "Martiri⚪", punti: 3, g: 1, v: 1, n: 0, p: 0, gf: 5, gs: 1, dr: 4 },
   { squadra: "PSG1🔴", punti: 0, g: 1, v: 0, n: 0, p: 1, gf: 1, gs: 5, dr: -4 },
   { squadra: "PSG2🔵", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
-  { squadra: "Natività", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
+  { squadra: "Natività🔘", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
   { squadra: "SGM⚫", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 }
 ];
 
