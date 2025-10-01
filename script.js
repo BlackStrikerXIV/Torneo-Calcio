@@ -5,57 +5,63 @@ const giornate = [
     partite: [
       { 
         data: "Martedì 30/09  Ore 20.30", 
-        squadra1: "PSG1", gol1: "1", 
-        squadra2: "Martiri", gol2: "5",        
+        squadra1: "PSG1🔴", gol1: "1", 
+        squadra2: "Martiri⚪", gol2: "5",        
         marcatori1: ["(1) Lorenzo Brito"],
-        marcatori2: ["(1) Kevin Tirilló", "(2) Daniele Croce", "(1) Massimo Boccanera", "(1) Daniel Rosati"]
+        marcatori2: ["(1) Kevin Tirilló", "(2) Daniele Croce", "(1) Massimo Boccanera", "(1) Daniel Rosati"],
+		ammoniti: ["🟨 Mauro Toro(PSG1🔴)"]
       },
       { 
         data: "Mercoledì 1/10  Ore 20.30", 
         squadra1: "Natività", gol1: "", 
-        squadra2: "SGM", gol2: "",
+        squadra2: "SGM⚫", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       }
     ],
-    riposo: ["PSG2"]
+    riposo: ["PSG2🔵"]
   },
   {
     giornata: 2,
     partite: [
       { 
         data: "Giovedì 2/10  Ore 20.30", 
-        squadra1: "PSG1", gol1: "", 
+        squadra1: "PSG1🔴", gol1: "", 
         squadra2: "Natività", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       },
       { 
         data: "Venerdì 3/10  Ore 20.30", 
-        squadra1: "Martiri", gol1: "", 
-        squadra2: "PSG2", gol2: "",
+        squadra1: "Martiri⚪", gol1: "", 
+        squadra2: "PSG2🔵", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       }
     ],
-    riposo: ["SGM"]
+    riposo: ["SGM⚫"]
   },
   {
     giornata: 3,
     partite: [
       { 
         data: "Sabato 4/10  Ore 18.00", 
-        squadra1: "Martiri", gol1: "", 
-        squadra2: "SGM", gol2: "",
+        squadra1: "Martiri⚪", gol1: "", 
+        squadra2: "SGM⚫", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       },
       { 
         data: "Domenica 5/10  Ore 18.00", 
-        squadra1: "PSG2", gol1: "", 
-        squadra2: "SGM", gol2: "",
+        squadra1: "PSG2🔵", gol1: "", 
+        squadra2: "SGM⚫", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       }
     ],
     riposo: ["PSG1", "Natività"]
@@ -65,40 +71,44 @@ const giornate = [
     partite: [
       { 
         data: "Lunedì 6/10  Ore 18.30", 
-        squadra1: "PSG2", gol1: "", 
+        squadra1: "PSG2🔵", gol1: "", 
         squadra2: "Natività", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       },
       { 
         data: "Lunedì 6/10  Ore 20.00", 
-        squadra1: "SGM", gol1: "", 
-        squadra2: "PSG1", gol2: "",
+        squadra1: "SGM⚫", gol1: "", 
+        squadra2: "PSG1🔴", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       }
     ],
-    riposo: ["Martiri"]
+    riposo: ["Martiri⚪"]
   },
   {
     giornata: 5,
     partite: [
       { 
         data: "Martedì 7/10  Ore 20.30", 
-        squadra1: "PSG1", gol1: "", 
-        squadra2: "PSG2", gol2: "",
+        squadra1: "PSG1🔴", gol1: "", 
+        squadra2: "PSG2🔵", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       },
       { 
         data: "Giovedì 9/10  Ore 20.30", 
-        squadra1: "Martiri", gol1: "", 
+        squadra1: "Martiri⚪", gol1: "", 
         squadra2: "Natività", gol2: "",
         marcatori1: [],
-        marcatori2: []
+        marcatori2: [],
+		ammoniti: []
       }
     ],
-    riposo: ["SGM"]
+    riposo: ["SGM⚫"]
   }
 ];
 
@@ -137,7 +147,7 @@ giornate.forEach(giornata => {
     trMarcatori.innerHTML = `
       <td></td>
       <td style="text-align: right;">${p.marcatori1.length > 0 ? p.marcatori1.join(", ") : "-"}</td>
-      <td></td>
+      <td style="text-align: center;">${p.ammoniti.length > 0 ? p.ammoniti.join(", ") : "-"}</td>
       <td style="text-align: left;">${p.marcatori2.length > 0 ? p.marcatori2.join(", ") : "-"}</td>
     `;
     calendarioBody.appendChild(trMarcatori);
@@ -154,11 +164,11 @@ giornate.forEach(giornata => {
 
 // --- CLASSIFICA ---
 const classifica = [
-  { squadra: "Martiri", punti: 3, g: 1, v: 1, n: 0, p: 0, gf: 5, gs: 1, dr: 4 },
-  { squadra: "PSG1", punti: 0, g: 1, v: 0, n: 0, p: 1, gf: 1, gs: 5, dr: -4 },
-  { squadra: "PSG2", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
+  { squadra: "Martiri⚪", punti: 3, g: 1, v: 1, n: 0, p: 0, gf: 5, gs: 1, dr: 4 },
+  { squadra: "PSG1🔴", punti: 0, g: 1, v: 0, n: 0, p: 1, gf: 1, gs: 5, dr: -4 },
+  { squadra: "PSG2🔵", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
   { squadra: "Natività", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 },
-  { squadra: "SGM", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 }
+  { squadra: "SGM⚫", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 }
 ];
 
 const classificaBody = document.querySelector("#tabella-classifica tbody");
@@ -181,11 +191,11 @@ classifica.forEach(c => {
 
 // --- MARCATORI ---
 const marcatori = [
-  { nome: "Daniele Croce", squadra: "Martiri", gol: 2 },
-  { nome: "Lorenzo Brito", squadra: "PSG1", gol: 1},
-  { nome: "Kevin Tirilló", squadra: "Martiri", gol: 1},
-  { nome: "Massimo Boccanera", squadra: "Martiri", gol: 1},
-  { nome: "Daniel Rosati", squadra: "Martiri", gol: 1},
+  { nome: "Daniele Croce", squadra: "Martiri⚪", gol: 2 },
+  { nome: "Lorenzo Brito", squadra: "PSG1🔴", gol: 1},
+  { nome: "Kevin Tirilló", squadra: "Martiri⚪", gol: 1},
+  { nome: "Massimo Boccanera", squadra: "Martiri⚪", gol: 1},
+  { nome: "Daniel Rosati", squadra: "Martiri⚪", gol: 1},
 ];
 
 const marcatoriBody = document.querySelector("#tabella-marcatori tbody");
@@ -199,5 +209,4 @@ marcatori.forEach(m => {
   `;
   marcatoriBody.appendChild(tr);
 });
-
 
