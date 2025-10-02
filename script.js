@@ -34,7 +34,7 @@ const giornate = [
 		ammoniti: []
       }
     ],
-    riposo: ["SGM⚫", PSG1🔴, Natività🔘]
+    riposo: ["SGM⚫", "PSG1🔴", "Natività🔘"]
   },
   {
     giornata: 3,
@@ -62,7 +62,7 @@ const giornate = [
         marcatori1: [],
         marcatori2: [],
 		ammoniti: []
-      },  
+      }
     ],
     riposo: [""]
   },
