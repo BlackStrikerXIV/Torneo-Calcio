@@ -7,16 +7,16 @@ const giornate = [
         data: "Martedì 30/09  Ore 20.30", 
         squadra1: "PSG1🔴", gol1: "1", 
         squadra2: "Martiri⚪", gol2: "5",        
-        marcatori1: ["⚽Lorenzo Brito"],
-        marcatori2: ["⚽Kevin Tirilló", "⚽⚽Daniele Croce", "⚽Massimo Boccanera", "⚽Daniel Rosati"],
+        marcatori1: ["Lorenzo Brito(1)"],
+        marcatori2: ["Kevin Tirilló(1)", "Daniele Croce(2)", "Massimo Boccanera(1)", "Daniel Rosati(1)"],
 		ammoniti: ["🟨 Mauro Toro(PSG1🔴)"]
       },
       { 
         data: "Mercoledì 1/10  Ore 20.30", 
         squadra1: "Natività🔘", gol1: "4", 
         squadra2: "SGM⚫", gol2: "3",
-        marcatori1: ["⚽Pietro Malventano", "⚽⚽⚽Leonardo Campara"],
-        marcatori2: ["⚽Leonardo Rocchi", "⚽⚽Emiliano Camponovo"],
+        marcatori1: ["Pietro Malventano(1)", "Leonardo Campara(3)"],
+        marcatori2: ["Leonardo Rocchi(1)", "Emiliano Camponovo(2)"],
 		ammoniti: []
       }
     ],
