@@ -26,23 +26,15 @@ const giornate = [
     giornata: 2,
     partite: [
       { 
-        data: "Giovedì 2/10  Ore 20.30", 
-        squadra1: "PSG1🔴", gol1: "", 
-        squadra2: "Natività🔘", gol2: "",
-        marcatori1: [],
-        marcatori2: [],
-		ammoniti: []
-      },
-      { 
         data: "Venerdì 3/10  Ore 20.30", 
         squadra1: "Martiri⚪", gol1: "", 
-        squadra2: "PSG2🔵", gol2: "",
+        squadra2: "SGM⚫", gol2: "",
         marcatori1: [],
         marcatori2: [],
 		ammoniti: []
       }
     ],
-    riposo: ["SGM⚫"]
+    riposo: ["SGM⚫", PSG1🔴, Natività🔘]
   },
   {
     giornata: 3,
@@ -58,13 +50,21 @@ const giornate = [
       { 
         data: "Domenica 5/10  Ore 18.00", 
         squadra1: "PSG2🔵", gol1: "", 
-        squadra2: "SGM⚫", gol2: "",
+        squadra2: "Martiri⚪", gol2: "",
         marcatori1: [],
         marcatori2: [],
 		ammoniti: []
-      }
+      },
+      { 
+        data: "Domenica 5/10  Ore 19.30", 
+        squadra1: "PSG1🔴", gol1: "", 
+        squadra2: "Natività🔘", gol2: "",
+        marcatori1: [],
+        marcatori2: [],
+		ammoniti: []
+      },  
     ],
-    riposo: ["PSG1", "Natività🔘"]
+    riposo: [""]
   },
   {
     giornata: 4,
