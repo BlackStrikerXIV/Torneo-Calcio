@@ -19,18 +19,17 @@ const giornate = [
         marcatori2: ["Leonardo Rocchi(1)", "Emiliano Camponovo(2)"],
 		ammoniti: []
       }
-    ],
-    riposo: ["PSG2🔵"]
+    ]
   },
   {
     giornata: 2,
     partite: [
       { 
         data: "Venerdì 3/10  Ore 20.30", 
-        squadra1: "SGM⚫", gol1: "", 
-        squadra2: "PSG2🔵", gol2: "",
-        marcatori1: [],
-        marcatori2: [],
+        squadra1: "SGM⚫", gol1: "5", 
+        squadra2: "PSG2🔵", gol2: "7",
+        marcatori1: ["Tiziano Fontana(1)", "Matteo Sbarra(2)", "Emiliano Camponovo(1)", "Andrea Patriarca(1)"],
+        marcatori2: ["Damiano Spagnoletti(4)", "Alessandro Diga(3)"],
 		ammoniti: []
       }
     ]
@@ -161,10 +160,11 @@ giornate.forEach(giornata => {
 // --- CLASSIFICA ---
 const classifica = [
   { squadra: "Martiri⚪", punti: 3, g: 1, v: 1, n: 0, p: 0, gf: 5, gs: 1, dr: 4 },
+  { squadra: "PSG2🔵", punti: 3, g: 1, v: 1, n: 0, p: 0, gf: 7, gs: 5, dr: 2 },
   { squadra: "Natività🔘", punti: 3, g: 1, v: 1, n: 0, p: 0, gf: 4, gs: 3, dr: 1 },
-  { squadra: "SGM⚫", punti: 0, g: 1, v: 0, n: 0, p: 1, gf: 3, gs: 4, dr: -1 },
-  { squadra: "PSG1🔴", punti: 0, g: 1, v: 0, n: 0, p: 1, gf: 1, gs: 5, dr: -4 },
-  { squadra: "PSG2🔵", punti: 0, g: 0, v: 0, n: 0, p: 0, gf: 0, gs: 0, dr: 0 }
+  { squadra: "SGM⚫", punti: 0, g: 2, v: 0, n: 0, p: 2, gf: 8, gs: 11, dr: -3 },
+  { squadra: "PSG1🔴", punti: 0, g: 1, v: 0, n: 0, p: 1, gf: 1, gs: 5, dr: -4 }
+  
 
 ];
 
@@ -188,6 +188,7 @@ classifica.forEach(c => {
 
 // --- MARCATORI ---
 const marcatori = [
+  { nome: "Damiano Spagnoletti", squadra: "PSG2🔵", gol: 4 },
   { nome: "Leonardo Campara", squadra: "Natività🔘", gol: 3 },
   { nome: "Emiliano Camponovo", squadra: "SGM⚫", gol: 2 },
   { nome: "Daniele Croce", squadra: "Martiri⚪", gol: 2 },
